@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="d:\visual studio\team tools\static analysis tools\fxcop\Xml\CodeAnalysisReport.xsl"?>
+<FxCopReport Version="15.0">
+ <Targets>
+  <Target Name="C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Release\EMemLib.dll">
+   <Modules>
+    <Module Name="ememlib.dll">
+     <Namespaces>
+      <Namespace Name="EMemLib">
+       <Types>
+        <Type Name="EMem" Kind="Class" Accessibility="Public" ExternallyVisible="True">
+         <Members>
+          <Member Name="#OpenProcess(System.Int32,System.Boolean,System.Int32)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">'EMem.OpenProcess(int, bool, int)'은(는) P/Invoke 메서드이므로 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 정의해야 합니다.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">어셈블리 외부에서 더 이상 노출되지 않도록 P/Invoke 'EMem.OpenProcess(int, bool, int)'의 액세스 가능성을 변경하십시오.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#ReadProcessMemory(System.IntPtr,System.IntPtr,System.Byte[],System.Int32,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">'EMem.ReadProcessMemory(IntPtr, IntPtr, byte[], int, ref int)'은(는) P/Invoke 메서드이므로 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 정의해야 합니다.</Issue>
+            </Message>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">코드에 선언된 것처럼 P/Invoke 'EMem.ReadProcessMemory(IntPtr, IntPtr, byte[], int, ref int)'의 매개 변수 'dwSize'은(는) 64비트 플랫폼에서 4바이트가 됩니다. 이 API의 실제 네이티브 선언에 따르면 64비트 플랫폼에서 8바이트여야 하므로 잘못된 상황입니다. 'int' 대신 사용할 데이터 형식을 결정하려면 MSDN Platform SDK 설명서를 참조하십시오.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">어셈블리 외부에서 더 이상 노출되지 않도록 P/Invoke 'EMem.ReadProcessMemory(IntPtr, IntPtr, byte[], int, ref int)'의 액세스 가능성을 변경하십시오.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VirtualAllocEx(System.IntPtr,System.IntPtr,System.UInt32,EMemLib.EMem+AllocationType,EMemLib.EMem+MemoryProtection)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">'EMem.VirtualAllocEx(IntPtr, IntPtr, uint, EMem.AllocationType, EMem.MemoryProtection)'은(는) P/Invoke 메서드이므로 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 정의해야 합니다.</Issue>
+            </Message>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">코드에 선언된 것처럼 P/Invoke 'EMem.VirtualAllocEx(IntPtr, IntPtr, uint, EMem.AllocationType, EMem.MemoryProtection)'의 매개 변수 'nSize'은(는) 64비트 플랫폼에서 4바이트가 됩니다. 이 API의 실제 네이티브 선언에 따르면 64비트 플랫폼에서 8바이트여야 하므로 잘못된 상황입니다. 'uint' 대신 사용할 데이터 형식을 결정하려면 MSDN Platform SDK 설명서를 참조하십시오.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">어셈블리 외부에서 더 이상 노출되지 않도록 P/Invoke 'EMem.VirtualAllocEx(IntPtr, IntPtr, uint, EMem.AllocationType, EMem.MemoryProtection)'의 액세스 가능성을 변경하십시오.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#VirtualProtectEx(System.IntPtr,System.IntPtr,System.UInt32,EMemLib.EMem+MemoryProtection,System.UInt32&amp;)" Kind="Method" Static="True" Accessibility="Public" ExternallyVisible="True">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">'EMem.VirtualProtectEx(IntPtr, IntPtr, uint, EMem.MemoryProtection, out uint)'은(는) P/Invoke 메서드이므로 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 정의해야 합니다.</Issue>
+            </Message>
+            <Message Id="2" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">코드에 선언된 것처럼 P/Invoke 'EMem.VirtualProtectEx(IntPtr, IntPtr, uint, EMem.MemoryProtection, out uint)'의 매개 변수 'nSize'은(는) 64비트 플랫폼에서 4바이트가 됩니다. 이 API의 실제 네이티브 선언에 따르면 64비트 플랫폼에서 8바이트여야 하므로 잘못된 상황입니다. 'uint' 대신 사용할 데이터 형식을 결정하려면 MSDN Platform SDK 설명서를 참조하십시오.</Issue>
+            </Message>
+            <Message TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="50" Level="CriticalError">어셈블리 외부에서 더 이상 노출되지 않도록 P/Invoke 'EMem.VirtualProtectEx(IntPtr, IntPtr, uint, EMem.MemoryProtection, out uint)'의 액세스 가능성을 변경하십시오.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+          <Member Name="#WriteProcessMemory(System.IntPtr,System.IntPtr,System.Byte[],System.Int32,System.Int32&amp;)" Kind="Method" Static="True" Accessibility="Private" ExternallyVisible="False">
+           <Messages>
+            <Message TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="Breaking">
+             <Issue Certainty="95" Level="CriticalWarning">'EMem.WriteProcessMemory(IntPtr, IntPtr, byte[], int, ref int)'은(는) P/Invoke 메서드이므로 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 정의해야 합니다.</Issue>
+            </Message>
+            <Message Id="3" TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901" Status="Active" Created="2018-08-19 07:02:35Z" FixCategory="NonBreaking">
+             <Issue Name="Parameter" Certainty="95" Level="Error">코드에 선언된 것처럼 P/Invoke 'EMem.WriteProcessMemory(IntPtr, IntPtr, byte[], int, ref int)'의 매개 변수 'dwSize'은(는) 64비트 플랫폼에서 4바이트가 됩니다. 이 API의 실제 네이티브 선언에 따르면 64비트 플랫폼에서 8바이트여야 하므로 잘못된 상황입니다. 'int' 대신 사용할 데이터 형식을 결정하려면 MSDN Platform SDK 설명서를 참조하십시오.</Issue>
+            </Message>
+           </Messages>
+          </Member>
+         </Members>
+        </Type>
+       </Types>
+      </Namespace>
+     </Namespaces>
+    </Module>
+   </Modules>
+  </Target>
+ </Targets>
+ <Rules>
+  <Rule TypeName="MovePInvokesToNativeMethodsClass" Category="Microsoft.Design" CheckId="CA1060">
+   <Name>P/Invoke를 NativeMethods 클래스로 이동</Name>
+   <Description>이 형식에는 DllImport 특성을 가진 멤버가 들어 있습니다. DllImport 특성을 가진 멤버는 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 들어 있어야 합니다.</Description>
+   <Resolution Name="Default">{0}은(는) P/Invoke 메서드이므로 NativeMethods, SafeNativeMethods 또는 UnsafeNativeMethods 클래스에 정의해야 합니다.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182161.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">CriticalWarning</MessageLevel>
+   <File Name="designrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokeDeclarationsShouldBePortable" Category="Microsoft.Portability" CheckId="CA1901">
+   <Name>P/Invoke 선언은 이식 가능해야 합니다.</Name>
+   <Description>.</Description>
+   <Resolution Name="Parameter">코드에 선언된 것처럼 P/Invoke {1}의 매개 변수 {0}은(는) {3} 플랫폼에서 {2}바이트가 됩니다. 이 API의 실제 네이티브 선언에 따르면 {3} 플랫폼에서 {4}바이트여야 하므로 잘못된 상황입니다. {5} 대신 사용할 데이터 형식을 결정하려면 MSDN Platform SDK 설명서를 참조하십시오.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182284(VS.100).aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="95">Error</MessageLevel>
+   <File Name="portabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+  <Rule TypeName="PInvokesShouldNotBeVisible" Category="Microsoft.Interoperability" CheckId="CA1401">
+   <Name>P/Invoke는 노출되지 않아야 합니다.</Name>
+   <Description>Interop 계층은 public이면 안 됩니다. DllImport 특성은 공개적으로 액세스 가능한 멤버(public 또는 protected)에 적용되면 안 됩니다.</Description>
+   <Resolution Name="Default">어셈블리 외부에서 더 이상 노출되지 않도록 P/Invoke {0}의 액세스 가능성을 변경하십시오.</Resolution>
+   <Owner />
+   <Url>http://msdn.microsoft.com/library/ms182209.aspx</Url>
+   <Email>[none]</Email>
+   <MessageLevel Certainty="50">CriticalError</MessageLevel>
+   <File Name="interoperabilityrules.dll" Version="15.0.0.0" />
+  </Rule>
+ </Rules>
+ <Localized>
+  <String Key="Category">범주</String>
+  <String Key="Certainty">확신도</String>
+  <String Key="CollapseAll">모두 축소</String>
+  <String Key="CheckId">확인 ID</String>
+  <String Key="Error">오류</String>
+  <String Key="Errors">개 오류</String>
+  <String Key="ExpandAll">모두 확장</String>
+  <String Key="Help">도움말</String>
+  <String Key="Line">줄</String>
+  <String Key="Messages">메시지</String>
+  <String Key="LocationNotStoredInPdb">[Pdb에 위치가 저장되지 않음]</String>
+  <String Key="Project">프로젝트</String>
+  <String Key="Resolution">확인</String>
+  <String Key="Rule">규칙</String>
+  <String Key="RuleFile">규칙 파일</String>
+  <String Key="RuleDescription">규칙 설명</String>
+  <String Key="Source">소스</String>
+  <String Key="Status">상태</String>
+  <String Key="Target">대상</String>
+  <String Key="Warning">경고</String>
+  <String Key="Warnings">경고</String>
+  <String Key="ReportTitle">코드 분석 보고서</String>
+ </Localized>
+</FxCopReport>

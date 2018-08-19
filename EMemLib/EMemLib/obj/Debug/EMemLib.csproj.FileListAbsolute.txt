@@ -1,0 +1,7 @@
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Debug\EMemLib.pdb
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Debug\EMemLib.csprojResolveAssemblyReference.cache
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Debug\EMemLib.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Debug\EMemLib.pdb
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Debug\EMemLib.dll.config
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Debug\EMemLib.dll
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Debug\EMemLib.dll

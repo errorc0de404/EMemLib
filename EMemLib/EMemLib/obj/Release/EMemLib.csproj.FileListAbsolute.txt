@@ -1,0 +1,9 @@
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Release\EMemLib.dll.config
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Release\EMemLib.dll
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Release\EMemLib.pdb
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Release\EMemLib.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Release\EMemLib.dll
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Release\EMemLib.pdb
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Release\EMemLib.dll.CodeAnalysisLog.xml
+C:\Users\USER\source\repos\EMemLib\EMemLib\bin\Release\EMemLib.dll.lastcodeanalysissucceeded
+C:\Users\USER\source\repos\EMemLib\EMemLib\obj\Release\EMemLib.csprojResolveAssemblyReference.cache
